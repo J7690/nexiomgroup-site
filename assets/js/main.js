@@ -39,4 +39,135 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  var resourcesGrid = document.getElementById("resources-grid");
+  if (resourcesGrid) {
+    var resourcesData = [
+      {
+        title: "Lancement d'Academia",
+        category: "Academia",
+        audience: "Étudiants & familles",
+        description: "Une plateforme unique pour retrouver les offres de formations, cours de soutien, préparations de concours et opportunités d'emploi proposées via Nexiom Group.",
+        image: "assets/img/resource-placeholder.svg",
+        imageAlt: "Illustration d'offres de formation pour les étudiants",
+        ctaLabel: "Être informé du lancement",
+        ctaHref: "#contact"
+      },
+      {
+        title: "Programme partenariats universités privées",
+        category: "Partenariats",
+        audience: "Universités & centres de formation",
+        description: "Nexiom Group structure la diffusion de vos programmes via Academia et accompagne la qualification des candidatures issues de vos campagnes.",
+        image: "assets/img/resource-placeholder.svg",
+        imageAlt: "Illustration de partenariat entre universités et Nexiom Group",
+        ctaLabel: "Devenir partenaire",
+        ctaHref: "#contact"
+      },
+      {
+        title: "Automatisation de vos réseaux sociaux",
+        category: "Nexiom AI Studio",
+        audience: "Entreprises & institutions",
+        description: "Nexiom AI Studio assiste vos équipes en planifiant les publications et en pilotant les pages Facebook, comptes WhatsApp, TikTok et Instagram.",
+        image: "assets/img/resource-placeholder.svg",
+        imageAlt: "Illustration d'automatisation des réseaux sociaux",
+        ctaLabel: "Discuter avec Nexiom",
+        ctaHref: "#contact"
+      },
+      {
+        title: "Opportunités pour étudiants et jeunes diplômés",
+        category: "Opportunités",
+        audience: "Étudiants & jeunes diplômés",
+        description: "Sélection d'offres de stages, d'emplois et de programmes d'appui, relayées via les réseaux sociaux et centralisées sur Academia.",
+        image: "assets/img/resource-placeholder.svg",
+        imageAlt: "Illustration d'opportunités pour les étudiants",
+        ctaLabel: "Recevoir des informations",
+        ctaHref: "#contact"
+      }
+    ];
+
+    resourcesData.forEach(function (item) {
+      var article = document.createElement("article");
+      article.className = "card";
+
+      var imageEl = null;
+      if (item.image) {
+        imageEl = document.createElement("img");
+        imageEl.className = "resource-image";
+        imageEl.src = item.image;
+        imageEl.alt = item.imageAlt || item.title;
+        imageEl.loading = "lazy";
+      }
+
+      var meta = document.createElement("p");
+      meta.className = "resource-meta";
+      meta.textContent = item.audience;
+
+      var tag = document.createElement("span");
+      tag.className = "resource-tag";
+      tag.textContent = item.category;
+
+      var titleEl = document.createElement("h3");
+      titleEl.textContent = item.title;
+
+      var desc = document.createElement("p");
+      desc.textContent = item.description;
+
+      var link = document.createElement("a");
+      link.className = "resource-link";
+      link.href = item.ctaHref;
+      link.textContent = item.ctaLabel;
+
+      if (imageEl) {
+        article.appendChild(imageEl);
+      }
+      article.appendChild(tag);
+      article.appendChild(titleEl);
+      article.appendChild(meta);
+      article.appendChild(desc);
+      article.appendChild(link);
+
+      resourcesGrid.appendChild(article);
+    });
+  }
+
+  var sectionIds = ["hero", "resources", "about", "products", "services", "academia", "contact"];
+  var navLinksMap = {};
+  sectionIds.forEach(function (id) {
+    var link = document.querySelector('.site-nav a[href="#' + id + '"]');
+    if (link) {
+      navLinksMap[id] = link;
+    }
+  });
+
+  function setActiveNav(id) {
+    for (var key in navLinksMap) {
+      if (!Object.prototype.hasOwnProperty.call(navLinksMap, key)) continue;
+      if (key === id) {
+        navLinksMap[key].classList.add("is-active");
+      } else {
+        navLinksMap[key].classList.remove("is-active");
+      }
+    }
+  }
+
+  function updateActiveSection() {
+    var currentId = "hero";
+    var offset = 96;
+
+    sectionIds.forEach(function (id) {
+      var section = document.getElementById(id);
+      if (!section) return;
+      var rect = section.getBoundingClientRect();
+      if (rect.top <= offset && rect.bottom >= offset) {
+        currentId = id;
+      }
+    });
+
+    setActiveNav(currentId);
+  }
+
+  if (Object.keys(navLinksMap).length > 0) {
+    window.addEventListener("scroll", updateActiveSection);
+    updateActiveSection();
+  }
 });
