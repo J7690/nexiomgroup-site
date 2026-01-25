@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Academia",
         audience: "Étudiants & familles",
         description: "Une plateforme unique pour retrouver les offres de formations, cours de soutien, préparations de concours et opportunités d'emploi proposées via Nexiom Group.",
-        image: "assets/img/resource-placeholder.svg",
+        image: "assets/img/academia04.png",
         imageAlt: "Illustration d'offres de formation pour les étudiants",
         ctaLabel: "Être informé du lancement",
         ctaHref: "#contact"
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Partenariats",
         audience: "Universités & centres de formation",
         description: "Nexiom Group structure la diffusion de vos programmes via Academia et accompagne la qualification des candidatures issues de vos campagnes.",
-        image: "assets/img/resource-placeholder.svg",
+        image: "assets/img/Coserfa.jpg",
         imageAlt: "Illustration de partenariat entre universités et Nexiom Group",
         ctaLabel: "Devenir partenaire",
         ctaHref: "#contact"
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Nexiom AI Studio",
         audience: "Entreprises & institutions",
         description: "Nexiom AI Studio assiste vos équipes en planifiant les publications et en pilotant les pages Facebook, comptes WhatsApp, TikTok et Instagram.",
-        image: "assets/img/resource-placeholder.svg",
+        image: "assets/img/nexiom02.png",
         imageAlt: "Illustration d'automatisation des réseaux sociaux",
         ctaLabel: "Discuter avec Nexiom",
         ctaHref: "#contact"
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Opportunités",
         audience: "Étudiants & jeunes diplômés",
         description: "Sélection d'offres de stages, d'emplois et de programmes d'appui, relayées via les réseaux sociaux et centralisées sur Academia.",
-        image: "assets/img/resource-placeholder.svg",
+        image: "assets/img/nexiom03.png",
         imageAlt: "Illustration d'opportunités pour les étudiants",
         ctaLabel: "Recevoir des informations",
         ctaHref: "#contact"
@@ -128,6 +128,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
       resourcesGrid.appendChild(article);
     });
+  }
+
+  var mediaSlider = document.querySelector("[data-media-slider]");
+  if (mediaSlider) {
+    var slides = mediaSlider.querySelectorAll(".media-slide");
+    var currentIndex = 0;
+    var slideCount = slides.length;
+    var intervalMs = 8000;
+
+    function showSlide(index) {
+      if (!slideCount) return;
+      for (var i = 0; i < slideCount; i++) {
+        slides[i].classList.toggle("is-active", i === index);
+      }
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slideCount;
+      showSlide(currentIndex);
+    }
+
+    if (slideCount > 1) {
+      setInterval(nextSlide, intervalMs);
+    }
   }
 
   var sectionIds = ["hero", "resources", "about", "products", "services", "academia", "contact"];

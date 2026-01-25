@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+*.log
+
+# Netlify
+.netlify/
+
+# Very large raw videos not used directly on the site
+assets/img/ng00.mp4
+assets/img/ng01.mp4
