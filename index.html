@@ -21,10 +21,15 @@
 
   <meta name="theme-color" content="#1B7F5A">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/components.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+  <a href="#main" class="skip-to-content">Aller au contenu principal</a>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -40,7 +45,7 @@
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav" data-nav-menu>
+      <nav class="site-nav" data-nav-menu role="navigation" aria-label="Navigation principale">
         <a href="#hero">Accueil</a>
         <a href="about.html">À propos</a>
         <a href="academia.html">Academia</a>
@@ -54,19 +59,19 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section id="media-slider" class="section media-slider">
       <div class="container">
         <div class="media-slider-inner" data-media-slider>
           <div class="media-slides">
             <div class="media-slide is-active">
               <div class="media-slide-content">
-                <img src="assets/img/nexiom02.png" alt="Vue des solutions Nexiom Group" loading="lazy">
+                <img src="assets/img/nexiom02.png" alt="Vue des solutions Nexiom Group" loading="lazy" width="1920" height="1080" fetchpriority="high">
               </div>
             </div>
             <div class="media-slide">
               <div class="media-slide-content">
-                <video class="media-video" src="assets/img/promo_academia.mp4" controls muted playsinline poster="assets/img/academia04.png">
+                <video class="media-video" src="assets/img/promo_academia.mp4" controls muted playsinline poster="assets/img/academia04.png" preload="metadata">
                   Votre navigateur ne supporte pas la lecture vidéo HTML5.
                 </video>
               </div>
@@ -118,7 +123,7 @@
             </div>
           </div>
           <div class="hero-media">
-            <img src="assets/img/nexiom01.png" alt="Illustration des interfaces d'Academia et de Nexiom AI Studio" loading="lazy">
+            <img src="assets/img/nexiom01.png" alt="Illustration des interfaces d'Academia et de Nexiom AI Studio" loading="lazy" width="800" height="600" fetchpriority="high">
           </div>
           <div class="hero-background-graphic" aria-hidden="true"></div>
         </div>
@@ -169,7 +174,7 @@
       <div class="container products-grid">
         <article class="card product-card">
           <div class="product-media">
-            <img src="assets/img/academia04.png" alt="Illustration de la plateforme Academia" class="product-image" loading="lazy">
+            <img src="assets/img/academia04.png" alt="Illustration de la plateforme Academia" class="product-image" loading="lazy" width="600" height="400">
           </div>
           <span class="product-tag">Academia</span>
           <h3>Academia – Vitrine centrale des offres & inscriptions</h3>
@@ -184,7 +189,7 @@
 
         <article class="card product-card">
           <div class="product-media">
-            <img src="assets/img/nexiom04.png" alt="Illustration du studio Nexiom AI" class="product-image" loading="lazy">
+            <img src="assets/img/nexiom04.png" alt="Illustration du studio Nexiom AI" class="product-image" loading="lazy" width="600" height="400">
           </div>
           <span class="product-tag">Nexiom AI Studio</span>
           <h3>Nexiom AI Studio – Studio d'IA marketing pour vos campagnes</h3>

@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "resources": "Resources",
+    "products": "Products",
+    "services": "Services",
+    "academia": "Academia",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Nexiom Ecosystem",
+    "title": "Academic brokerage & digital solutions",
+    "subtitle": "Nexiom Group connects students, universities and institutions through Academia and Nexiom AI Studio. Automate your communication and manage your campaigns.",
+    "cta_primary": "Discover Nexiom",
+    "cta_secondary": "Learn more",
+    "stats_students": "Students",
+    "stats_partners": "Partners",
+    "stats_satisfaction": "Satisfaction"
+  },
+  "personas": {
+    "title": "You are?",
+    "subtitle": "Select your profile to discover Nexiom solutions tailored to your needs.",
+    "student": {
+      "title": "Students & Families",
+      "description": "Find your ideal training and facilitate your registration",
+      "link": "Explore trainings"
+    },
+    "university": {
+      "title": "Universities & Schools",
+      "description": "Broadcast your programs and receive qualified applications",
+      "link": "Become a partner"
+    },
+    "company": {
+      "title": "Companies & Institutions",
+      "description": "Automate your communication and manage your campaigns",
+      "link": "Discover Nexiom AI Studio"
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Discover the experiences of our partners and students."
+  },
+  "stats": {
+    "students": "Students supported",
+    "partners": "University partners",
+    "satisfaction": "% Satisfaction rate",
+    "countries": "African countries covered"
+  },
+  "blog": {
+    "title": "News & Blog",
+    "subtitle": "Stay informed about the latest news from Nexiom Group and education in Africa."
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Want to learn more about our services, become a partner or discuss a project? Our team is here to help.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send message"
+    }
+  },
+  "footer": {
+    "tagline": "Education • Technology • Africa",
+    "description": "African reference group in academic brokerage, educational platforms and AI marketing.",
+    "copyright": "© {year} Nexiom Group. All rights reserved."
+  }
+}

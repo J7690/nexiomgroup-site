@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "resources": "Ressources",
+    "products": "Produits",
+    "services": "Services",
+    "academia": "Academia",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Écosystème Nexiom",
+    "title": "Courtage académique & solutions numériques",
+    "subtitle": "Nexiom Group connecte étudiants, universités et institutions grâce à Academia et Nexiom AI Studio. Automatisez votre communication et pilotez vos campagnes.",
+    "cta_primary": "Découvrir Nexiom",
+    "cta_secondary": "En savoir plus",
+    "stats_students": "Étudiants",
+    "stats_partners": "Partenaires",
+    "stats_satisfaction": "Satisfaction"
+  },
+  "personas": {
+    "title": "Vous êtes ?",
+    "subtitle": "Sélectionnez votre profil pour découvrir les solutions Nexiom adaptées à vos besoins.",
+    "student": {
+      "title": "Étudiants & Familles",
+      "description": "Trouvez votre formation idéale et facilitez votre inscription",
+      "link": "Explorer les formations"
+    },
+    "university": {
+      "title": "Universités & Écoles",
+      "description": "Diffusez vos programmes et recevez des candidatures qualifiées",
+      "link": "Devenir partenaire"
+    },
+    "company": {
+      "title": "Entreprises & Institutions",
+      "description": "Automatisez votre communication et pilotez vos campagnes",
+      "link": "Découvrir Nexiom AI Studio"
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "subtitle": "Découvrez les expériences de nos partenaires et étudiants."
+  },
+  "stats": {
+    "students": "Étudiants accompagnés",
+    "partners": "Partenaires universités",
+    "satisfaction": "% Taux de satisfaction",
+    "countries": "Pays d'Afrique couverts"
+  },
+  "blog": {
+    "title": "Actualités & Blog",
+    "subtitle": "Restez informé des dernières nouvelles de Nexiom Group et de l'éducation en Afrique."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous souhaitez en savoir plus sur nos services, devenir partenaire ou discuter d'un projet ? Notre équipe est à votre écoute.",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "tagline": "Education • Technology • Africa",
+    "description": "Groupe africain de référence en courtage académique, plateformes éducatives et IA marketing.",
+    "copyright": "© {year} Nexiom Group. Tous droits réservés."
+  }
+}

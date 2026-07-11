@@ -1,6 +1,35 @@
 [build]
-  publish = "."
-  command = ""
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Redirects pour i18n et SPA
+[[redirects]]
+  from = "/*"
+  to = "/fr/:splat"
+  status = 301
+  force = true
+  conditions = {Language = ["fr"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 301
+  force = true
+  conditions = {Language = ["en"]}
+
+# Redirect academiea.com to www.academiea.com
+[[redirects]]
+  from = "https://academiea.com/*"
+  to = "https://www.academiea.com/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/privacy-policy"
@@ -10,14 +39,12 @@
 [[redirects]]
   from = "/privacy-policy/"
   to = "/privacy.html"
-  status = 301
 
-[[redirects]]
-  from = "/delete-account"
-  to = "/delete-account.html"
-  status = 200
-
-[[redirects]]
-  from = "/api/*"
-  to = "https://example.com/:splat"
-  status = 200
+# Headers pour sécurité et performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"

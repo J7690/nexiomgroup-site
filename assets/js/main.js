@@ -194,4 +194,11 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", updateActiveSection);
     updateActiveSection();
   }
+
+  // Initialize modern components
+  if (typeof initModernComponents === 'function') {
+    initModernComponents().catch(error => {
+      console.error('Error initializing modern components:', error);
+    });
+  }
 });

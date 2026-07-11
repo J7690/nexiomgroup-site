@@ -5,6 +5,18 @@ node_modules/
 # Netlify
 .netlify/
 
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
 # Very large raw videos not used directly on the site
 assets/img/ng00.mp4
 assets/img/ng01.mp4

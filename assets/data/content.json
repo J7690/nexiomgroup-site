@@ -1,0 +1,132 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Moussa K.",
+      "role": "Étudiant en Génie Civil",
+      "text": "Grâce à Academia, j'ai trouvé la formation idéale en ingénierie. Le processus d'inscription était simple et bien guidé.",
+      "avatar": "assets/img/nexiom01.png",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Dr. Sanou A.",
+      "role": "Doyen, Université de Ouagadougou",
+      "text": "Nexiom AI Studio a transformé notre communication. Nos campagnes réseaux sociaux sont maintenant automatisées et plus efficaces.",
+      "avatar": "assets/img/nexiom02.png",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Mme. Kabore",
+      "role": "Parent d'étudiant",
+      "text": "En tant que parent, j'étais inquiet pour l'orientation de mon fils. L'équipe Nexiom nous a accompagnés avec professionnalisme.",
+      "avatar": "assets/img/nexiom03.png",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Jean-Baptiste O.",
+      "role": "Directeur, École Supérieure de Commerce",
+      "text": "Notre partenariat avec Nexiom Group a augmenté nos inscriptions de 40% en un an. Academia est un outil puissant.",
+      "avatar": "assets/img/nexiom04.png",
+      "rating": 5
+    }
+  ],
+  "stats": [
+    {
+      "id": 1,
+      "number": 2500,
+      "label": "Étudiants accompagnés"
+    },
+    {
+      "id": 2,
+      "number": 45,
+      "label": "Partenaires universités"
+    },
+    {
+      "id": 3,
+      "number": 98,
+      "label": "% Taux de satisfaction"
+    },
+    {
+      "id": 4,
+      "number": 12,
+      "label": "Pays d'Afrique couverts"
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "Lancement officiel d'Academia",
+      "category": "Actualités",
+      "date": "2026-01-15",
+      "excerpt": "Nexiom Group lance Academia, la plateforme centrale des offres de formation et d'inscription pour l'Afrique de l'Ouest.",
+      "content": "Après deux ans de développement, Nexiom Group est fier d'annoncer le lancement officiel d'Academia. Cette plateforme révolutionnaire centralise l'ensemble des programmes universitaires, formations professionnelles et opportunités d'emploi proposés via notre écosystème.",
+      "image": "assets/img/academia04.png",
+      "author": "Équipe Nexiom"
+    },
+    {
+      "id": 2,
+      "title": "Nexiom AI Studio : L'IA au service de votre communication",
+      "category": "Innovation",
+      "date": "2026-02-20",
+      "excerpt": "Découvrez comment notre studio d'IA marketing automatise vos réseaux sociaux et maximise l'impact de vos campagnes.",
+      "content": "Nexiom AI Studio représente une avancée majeure dans l'automatisation marketing pour le secteur éducatif. Notre IA analyse les tendances, génère du contenu optimisé et pilote vos publications sur les réseaux sociaux.",
+      "image": "assets/img/nexiom02.png",
+      "author": "Équipe Technique"
+    },
+    {
+      "id": 3,
+      "title": "Partenariat stratégique avec 5 nouvelles universités",
+      "category": "Partenariats",
+      "date": "2026-03-10",
+      "excerpt": "Nexiom Group étend son réseau avec 5 nouveaux partenariats universitaires au Burkina Faso, Mali et Côte d'Ivoire.",
+      "content": "Ce nouveau chapitre marque une étape importante dans notre mission de faciliter l'accès à l'éducation de qualité en Afrique de l'Ouest. Les étudiants auront désormais accès à un catalogue encore plus diversifié de formations.",
+      "image": "assets/img/Coserfa.jpg",
+      "author": "Équipe Partenariats"
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "title": "Lancement d'Academia",
+      "category": "Academia",
+      "audience": "Étudiants & familles",
+      "description": "Une plateforme unique pour retrouver les offres de formations, cours de soutien, préparations de concours et opportunités d'emploi proposées via Nexiom Group.",
+      "image": "assets/img/academia04.png",
+      "ctaLabel": "Être informé du lancement",
+      "ctaHref": "#contact"
+    },
+    {
+      "id": 2,
+      "title": "Programme partenariats universités privées",
+      "category": "Partenariats",
+      "audience": "Universités & centres de formation",
+      "description": "Nexiom Group structure la diffusion de vos programmes via Academia et accompagne la qualification des candidatures issues de vos campagnes.",
+      "image": "assets/img/Coserfa.jpg",
+      "ctaLabel": "Devenir partenaire",
+      "ctaHref": "#contact"
+    },
+    {
+      "id": 3,
+      "title": "Automatisation de vos réseaux sociaux",
+      "category": "Nexiom AI Studio",
+      "audience": "Entreprises & institutions",
+      "description": "Nexiom AI Studio assiste vos équipes en planifiant les publications et en pilotant vos réseaux sociaux de manière coordonnée.",
+      "image": "assets/img/nexiom02.png",
+      "ctaLabel": "Discuter avec Nexiom",
+      "ctaHref": "#contact"
+    },
+    {
+      "id": 4,
+      "title": "Opportunités pour étudiants et jeunes diplômés",
+      "category": "Opportunités",
+      "audience": "Étudiants & jeunes diplômés",
+      "description": "Sélection d'offres de stages, d'emplois et de programmes d'appui, relayées via nos canaux de communication et centralisées sur Academia.",
+      "image": "assets/img/nexiom03.png",
+      "ctaLabel": "Recevoir des informations",
+      "ctaHref": "#contact"
+    }
+  ]
+}
