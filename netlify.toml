@@ -1,13 +1,8 @@
 [build]
-  command = "npm run build"
-  publish = ".next"
+  publish = "."
+  command = ""
 
-[build.environment]
-  NODE_VERSION = "20.19.0"
-  NEXT_TELEMETRY_DISABLED = "1"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# Pas de build nécessaire - déploiement statique des fichiers HTML
 
 # Redirects pour i18n et SPA
 [[redirects]]
