@@ -4,20 +4,8 @@
 
 # Pas de build nécessaire - déploiement statique des fichiers HTML
 
-# Redirects pour i18n et SPA
-[[redirects]]
-  from = "/*"
-  to = "/fr/:splat"
-  status = 301
-  force = true
-  conditions = {Language = ["fr"]}
-
-[[redirects]]
-  from = "/*"
-  to = "/en/:splat"
-  status = 301
-  force = true
-  conditions = {Language = ["en"]}
+# Pas de redirection de langue : les dossiers /fr/ et /en/ n'existent pas
+# dans le site statique (13/10/2026, ils renvoyaient tout le monde en 404).
 
 # Redirect academiea.com to www.academiea.com
 [[redirects]]
